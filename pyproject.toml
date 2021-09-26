@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "matrix_handler"
+version = "0.1.0"
+description = ""
+authors = ["evglit"]
+packages = [
+  { include = "matrix_handler" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.9.2"
+pytest = "^6.2.5"
+pytest-cov = "^2.12.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+matrix_handler = "matrix_handler.scripts.matrix_handler:main"
