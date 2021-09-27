@@ -4,5 +4,7 @@
 <a href="https://codeclimate.com/github/Evglit/matrix_handler/test_coverage"><img src="https://api.codeclimate.com/v1/badges/3d287c36a89eaa0415b6/test_coverage" /></a><br>
 
 ## Description
-Generates a matrix of any size and transposes it.<br>
-Note: Creation and transposition of large matrices (10000x10000 and more) can take a long time.
+Generates a matrix of the specified size and saves it to the matrix.txt file. Then transapans the matrix and saves it to the trans_matrix.txt file.<br>
+``` bash
+Note: Creation and transposition of large matrices 10000x10000 and more, can take a long time.
+```
