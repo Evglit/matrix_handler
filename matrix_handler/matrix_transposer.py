@@ -5,16 +5,23 @@
 import os
 
 
-def transpose_matrix(file_name='matrix.txt', file_name_new='trans_matrix.txt', file_path=os.getcwd()):
+def transpose_matrix(
+    file_name='matrix.txt', file_name_new='trans_matrix.txt',
+    file_path=os.getcwd()
+):
     """Get matrix from file and transpose it.
 
     Arguments:
-        file_name (str) - the name of the file in which
-            the matrix is located (default: 'matrix.txt')
-        file_name_new (str) - the name of the file in which
-            the matrix will be saved (default: 'trans_matrix.txt')
-        file_path (str) - the path where the file with
-            the matrix is located (default: script launch location)
+        file_name : str
+            the name of the file in which the matrix is located
+            default: 'matrix.txt'
+        file_name_new : str
+            the name of the file in which the matrix will be saved
+            default: 'trans_matrix.txt'
+        file_path : str
+            the path where the file with the matrix is located
+            default: script launch location
+
     """
     full_path = os.path.join(file_path, file_name)
     full_path_new = os.path.join(file_path, file_name_new)

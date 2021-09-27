@@ -10,7 +10,9 @@ from matrix_handler.matrix_transposer import transpose_matrix
 @pytest.mark.parametrize('rows, columns', [(5, 5), (10, 5)])
 def test_generate_matrix(rows, columns):
     with tempfile.TemporaryDirectory() as tmpdirname:
-        generate_matrix(rows, columns, file_name='matrix.txt', file_path=tmpdirname)
+        generate_matrix(
+            rows, columns, file_name='matrix.txt', file_path=tmpdirname
+        )
         path = os.path.join(tmpdirname, 'matrix.txt')
         assert os.path.exists(path)
         with open(path, 'r') as file:
@@ -43,7 +45,10 @@ def test_transpose_matrix(matrix, trans_matrix):
         path = os.path.join(tmpdirname, 'matrix.txt')
         with open(path, 'w') as file:
             file.write(matrix)
-        transpose_matrix(file_name='matrix.txt', file_name_new='trans_matrix.txt', file_path=tmpdirname)
+        transpose_matrix(
+            file_name='matrix.txt', file_name_new='trans_matrix.txt',
+            file_path=tmpdirname
+        )
         path_new = os.path.join(tmpdirname, 'trans_matrix.txt')
         assert os.path.exists(path_new)
         with open(path_new, 'r') as file:

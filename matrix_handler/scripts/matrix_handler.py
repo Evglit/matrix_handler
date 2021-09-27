@@ -2,12 +2,14 @@
 
 """Matrix handler script."""
 
+from matrix_handler.cli import get_param
 from matrix_handler.matrix_generator import generate_matrix
 from matrix_handler.matrix_transposer import transpose_matrix
 
 
 def main():
-    generate_matrix(10, 10)
+    rows, columns = get_param()
+    generate_matrix(rows, columns)
     transpose_matrix()
 
 
