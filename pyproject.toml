@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "matrix_handler"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["evglit"]
 packages = [
