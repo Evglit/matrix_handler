@@ -15,6 +15,10 @@ Clone the repository, open the package in the command line and run these command
 make build
 make package-install
 ```
+Or just run the command:
+``` bash
+pip install --user --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ matrix-handler
+```
 
 ## Usege
 After successful installation, run in the command line:
