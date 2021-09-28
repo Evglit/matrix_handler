@@ -13,7 +13,8 @@ def main():
     rows, columns = get_param()
     generate_matrix(rows, columns)
     transpose_matrix()
-    print(f'--- Program execution time: {(time.time() - start_time)} seconds ---')
+    print(f'--- Program execution time:\
+        {(time.time() - start_time)} seconds ---')
 
 
 if __name__ == '__main__':
