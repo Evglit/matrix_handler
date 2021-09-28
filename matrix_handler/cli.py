@@ -4,12 +4,12 @@
 def get_param():
     """Get parameters of matrix from the user and check them.
 
-    Retrur
+    Return
     ------
     rows : int
-        number of rows
+        number of rows of matrix
     columns : int
-        number of columns
+        number of columns of matrix
 
     """
     print('Enter the parameters of the matrix.')
