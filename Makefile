@@ -17,6 +17,9 @@ check: selfcheck test-coverage lint
 
 build:
 	poetry build
+
+publish:
+	poetry publish --repository foo
 	
 package-install:
 	pip install --user dist/*.whl
