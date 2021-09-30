@@ -5,7 +5,9 @@
 
 ## Description
 This package generates a matrix of the specified size and saves it to the "matrix.txt" file. Then it transposes the matrix and saves it to the "trans_matrix.txt" file. Matrix files are created in the directory where the program is launched.<br>
-`Note: Creation and transposition of large matrices 10000x10000 and more, can take a long time.`
+
+``Note: Creation and transposition of large matrices 10000x10000 and more, can take a long time.``
+
 
 ## Installation
 Clone the repository, open the package in the command line and run these commands:<br>
