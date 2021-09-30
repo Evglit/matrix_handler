@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "matrix_handler"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 authors = ["evglit"]
 packages = [
@@ -20,4 +20,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-matrix-handler = "matrix_handler.scripts.matrix_handler:main"
+matrix-handler = "matrix_handler.scripts.mtx_hdlr:main"
