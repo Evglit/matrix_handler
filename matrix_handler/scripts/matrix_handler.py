@@ -9,8 +9,8 @@ from matrix_handler.matrix_transposer import transpose_matrix
 
 
 def main():
-    start_time = time.time()
     rows, columns = get_param()
+    start_time = time.time()
     generate_matrix(rows, columns)
     transpose_matrix()
     print(f'--- Program execution time:\

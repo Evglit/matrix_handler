@@ -38,12 +38,12 @@ def generate_matrix(
     """
     full_path = os.path.join(file_path, file_name)
     with open(full_path, 'w') as file:
-        for row in range(rows):
+        for row_num in range(rows):
             row_items = [
                 str(randint(init_val, end_val)) for _ in range(columns)
             ]
             row_items_str = ''.join(row_items)
-            if row != rows - 1:
+            if row_num != rows - 1:
                 row_items_str += '\n'
             file.write(row_items_str)
     print(f'Matrix has successfully saved to {full_path}')

@@ -29,10 +29,10 @@ def transpose_matrix(
         rows = len(file.readline()) - 1
         file.seek(0)
         with open(full_path_new, 'w') as file_new:
-            for number_row in range(rows):
+            for row_num in range(rows):
                 for row in file:
-                    file_new.write(row[number_row])
-                if number_row != rows - 1:
+                    file_new.write(row[row_num])
+                if row_num != rows - 1:
                     file_new.write('\n')
                 file.seek(0)
     print(f'Transposed matrix successfully saved to {full_path_new}')
